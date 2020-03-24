@@ -1,0 +1,147 @@
+#wrapper {
+    width:95vw;
+    background-color: #191919;
+    height:900px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+body {
+    background-color: black;
+    background-size: cover;
+    color: white;
+}
+
+.top-nav-item {
+    font-family: Verdana, Geneva, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14pt;
+    padding: 1em 0.25em;
+    margin-left: 0em;
+    margin-right: 0em;
+    color:white;
+    /* box-shadow: 0 0 0 1px inset white; */
+}
+
+#top-nav ul label {
+    font-size: 20pt;
+    padding:0;
+    margin: 0;
+}
+
+.hidden-list {
+    display: none;
+    position: absolute;
+    width: 90px;
+    text-align: left;
+    left: 45px;
+    top: 50px;
+}
+.hidden-list a {
+    color:white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.top-nav-item:hover {
+    width: 120px;
+    background-color: #559ACC;
+    color:white;
+    box-shadow: 0 0 0 4px inset rgb(119, 185, 231);
+    padding-bottom: 350px;
+    transition-duration: 0.25s;
+}
+.top-nav-item:hover + .hidden-list {
+    display: list-item;
+    position: absolute;
+    list-style-type: none;
+    color: yellow;
+}
+
+#top-nav {
+    float:right;
+    max-width: fit-content;
+    height: 64px;
+    display: flex;
+    /* box-shadow: 0 0 0 1px inset green; */
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /* top: -8px; */
+    line-height: 64px;
+    /* right: -50px; */
+}
+nav {
+    /* background-color: black; */
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FRsKrbS6GyRo%2Fmaxresdefault.jpg&f=1&nofb=1");
+    /* box-shadow: 0 0 0 1px brown; */
+    height:200px;
+    max-width:100%;
+    text-align: center;
+}
+input {
+    background-color: #303030;
+    border: 0;
+    height: 30px;
+    max-width: 80px;
+    margin-right: 0;
+    padding: 4px;
+    position: relative;
+    top: -4px;
+    color:white;
+}
+button {
+    background-color: #303030;
+    color: white;
+    border: 0;
+    padding: 2px 8px;
+    height: 38px;
+    margin-left: 0;
+    position: relative;
+    left: -5px;
+    top: 0px;
+}
+button img {
+    width: 20px;
+    position:relative;
+    top: 2px;
+}
+ul {
+    float: none;
+    margin: auto;
+    /* box-shadow: 0 0 0 1px inset yellow; */
+}
+#nasa-logo {
+    width:130px;
+    float: left;
+    margin-left: 0px;
+    left: 10px;
+    top: 10px;
+    margin-top: 0px;
+    position: absolute;
+}
+
+@media only screen and (max-width: 1140px) {
+    body {
+        
+    }
+    .top-nav-item {
+        font-size: 12pt;
+    }
+    ul {
+    }
+}
+@media only screen and (max-width: 1000px) {
+    body {
+        
+    }
+    .top-nav-item {
+        display:none;
+    }
+    #top-nav ul label {
+        display:none;
+    }
+    ul {
+    }
+}
